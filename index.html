@@ -10,9 +10,13 @@
   <header>
     <div>
       <h1>德州扑克</h1>
-      <p class="sub">无限注 · 四人桌 · 小盲 10 / 大盲 20</p>
+      <p class="sub">无限注 · 小盲 10 / 大盲 20</p>
+      <p class="hint">快捷键：F 弃牌，C 或空格 过牌/跟注，Enter 确认加注。点筹码放入，再点下面的筹码收回；拆、合可以换算。<br>摊牌后按 Enter 开下一手。这一手输了或弃牌，可花 100 抽一张道具，身上同时只能有一张。</p>
     </div>
-    <p id="meta"></p>
+    <div class="top">
+      <p id="meta"></p>
+      <button type="button" id="sound" aria-pressed="true">音效开</button>
+    </div>
   </header>
   <div class="rail" id="table">
     <div class="felt"><p class="loading">洗牌…</p></div>
@@ -20,8 +24,8 @@
   <p id="rank"></p>
   <ol id="log"></ol>
   <div id="controls"></div>
-  <p class="hint">快捷键：F 弃牌，C 或空格 过牌/跟注，Enter 确认加注。<br>摊牌后按 Enter 开下一手。</p>
   <div id="live" class="sr-only" aria-live="polite"></div>
+  <script src="engine.js"></script>
   <script src="game.js"></script>
 </body>
 </html>
